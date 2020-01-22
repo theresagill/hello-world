@@ -29,10 +29,11 @@ namespace GitTest
             }
             public void FeedPet()
             {
-                if (health < MAX_HEALTH)
-                    health++;
-                else
-                    MessageBox.Show("Health is at the maximum");
+            if (health < MAX_HEALTH)
+                //  health++;
+                health--;
+            else
+                MessageBox.Show("Health is at the maximum");
             }
             public void PlayPet()
             {
